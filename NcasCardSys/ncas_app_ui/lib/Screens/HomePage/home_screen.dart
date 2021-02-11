@@ -67,7 +67,7 @@ class _HomeState extends State<Home>with SingleTickerProviderStateMixin {
         children: [
           UpdateScreen(),
           SubmitScreen(),
-          UpdateScreen()
+          InfoScreen()
         ],
       ),
 

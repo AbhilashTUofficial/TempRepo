@@ -8,8 +8,6 @@ class SubmitScreen extends StatefulWidget {
 class _SubmitScreenState extends State<SubmitScreen> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Submit page"),
-    );
+    return Container(color: Colors.white,);
   }
 }
