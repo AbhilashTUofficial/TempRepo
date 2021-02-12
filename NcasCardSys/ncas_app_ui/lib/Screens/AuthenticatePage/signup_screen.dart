@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'file:///C:/programming/GitHub/TempRepo/NcasCardSys/ncas_app_ui/lib/Screens/AuthenticatePage/Widgets/Components/gotoLogIn.dart';
+import 'Widgets/Components/gotoLogIn.dart';
 import 'package:ncas_app_ui/export.dart';
 
 class SignupScreen extends StatefulWidget {

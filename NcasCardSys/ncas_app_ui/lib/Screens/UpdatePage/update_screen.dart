@@ -16,7 +16,14 @@ class _UpdateScreenState extends State<UpdateScreen> {
       body: Column(
         children: [
           TopStudents(),
-          RecentTile()
+      Expanded(
+        child: ListView.builder(
+          itemCount: recentList.length,
+          itemBuilder: (BuildContext context, int index) {
+            return RecentTile(recentList[index].imgUrl);
+          },
+        ),
+      )
         ],
       ),
     );
