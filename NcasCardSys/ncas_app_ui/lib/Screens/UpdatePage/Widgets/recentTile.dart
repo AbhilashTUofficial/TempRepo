@@ -1,11 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ncas_app_ui/model/recent.dart';
 
 class RecentTile extends StatefulWidget {
   @override
   _RecentTileState createState() => _RecentTileState();
-  final String imgUrl;
-  RecentTile(this.imgUrl);
+  int index;
+  RecentTile(this.index);
 }
 
 class _RecentTileState extends State<RecentTile> {
@@ -31,8 +32,8 @@ class _RecentTileState extends State<RecentTile> {
               borderRadius: BorderRadius.circular(3),
             ),
             child: CircleAvatar(
-
-              backgroundImage: AssetImage("img.png"),
+              radius: 30,
+             // backgroundImage: recentList[widget.index].imgUrl,
             ),
           ),
           Container(

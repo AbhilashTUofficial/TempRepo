@@ -26,7 +26,7 @@ List<Recent>recentList=[
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/img.png"
+      imgUrl: "img/logo.png"
   ),
   Recent(
       name:"Abhilash Tu",
@@ -36,7 +36,7 @@ List<Recent>recentList=[
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/img.png"
+      imgUrl: "img/logo.png"
   ),
   Recent(
       name:"Abhilash Tu",
@@ -46,7 +46,7 @@ List<Recent>recentList=[
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/img.png"
+      imgUrl: "img/logo.png"
   ),
   Recent(
       name:"Abhilash Tu",
@@ -56,7 +56,7 @@ List<Recent>recentList=[
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/img.png"
+      imgUrl: "img/logo.png"
   ),
   Recent(
     name:"Abhilash Tu",
@@ -66,7 +66,7 @@ List<Recent>recentList=[
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
     subBy: "Abhilash Tu",
-    imgUrl: "img/img.png"
+    imgUrl: "img/logo.png"
   ),
   Recent(
       name:"Abhilash Tu",
@@ -76,7 +76,7 @@ List<Recent>recentList=[
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/img.png"
+      imgUrl: "img/logo.png"
   ),
   Recent(
       name:"Abhilash Tu",
@@ -86,7 +86,7 @@ List<Recent>recentList=[
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/img.png"
+      imgUrl: "img/logo.png"
   ),
   Recent(
       name:"Abhilash Tu",
@@ -96,6 +96,6 @@ List<Recent>recentList=[
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/img.png"
+      imgUrl: "img/logo.png"
   ),
 ];
