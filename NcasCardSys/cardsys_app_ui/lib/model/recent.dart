@@ -21,81 +21,81 @@ List<Recent>recentList=[
   Recent(
       name:"Abhilash Tu",
       department: "Computer Science",
-      cardColor: Colors.amberAccent,
+      cardColor: Colors.redAccent,
       date:"21-10-2001",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/logo.png"
+      imgUrl: "assets/img/logo.png"
   ),
   Recent(
-      name:"Abhilash Tu",
+      name:"Student 2",
       department: "Computer Science",
       cardColor: Colors.amberAccent,
       date:"21-10-2001",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/logo.png"
+      imgUrl: "assets/img/logo.png"
   ),
   Recent(
-      name:"Abhilash Tu",
+      name:"Student 3",
       department: "Computer Science",
       cardColor: Colors.amberAccent,
       date:"21-10-2001",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/logo.png"
+      imgUrl: "assets/img/logo.png"
   ),
   Recent(
-      name:"Abhilash Tu",
+      name:"Student 4",
       department: "Computer Science",
-      cardColor: Colors.amberAccent,
+      cardColor: Colors.green,
       date:"21-10-2001",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/logo.png"
+      imgUrl: "assets/img/logo.png"
   ),
   Recent(
-    name:"Abhilash Tu",
+    name:"Student 5",
     department: "Computer Science",
-    cardColor: Colors.amberAccent,
+    cardColor: Colors.blue,
     date:"21-10-2001",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
         "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
     subBy: "Abhilash Tu",
-    imgUrl: "img/logo.png"
+    imgUrl: "assets/img/logo.png"
   ),
   Recent(
-      name:"Abhilash Tu",
+      name:"Student 6",
       department: "Computer Science",
-      cardColor: Colors.amberAccent,
+      cardColor: Colors.blue,
       date:"21-10-2001",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/logo.png"
+      imgUrl: "assets/img/logo.png"
   ),
   Recent(
-      name:"Abhilash Tu",
+      name:"Student 7",
       department: "Computer Science",
-      cardColor: Colors.amberAccent,
+      cardColor: Colors.red,
       date:"21-10-2001",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/logo.png"
+      imgUrl: "assets/img/logo.png"
   ),
   Recent(
-      name:"Abhilash Tu",
+      name:"Student 8",
       department: "Computer Science",
-      cardColor: Colors.amberAccent,
+      cardColor: Colors.green,
       date:"21-10-2001",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
           "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
       subBy: "Abhilash Tu",
-      imgUrl: "img/logo.png"
+      imgUrl: "assets/img/logo.png"
   ),
 ];

@@ -7,21 +7,30 @@ class UpdateScreen extends StatefulWidget {
 }
 
 class _UpdateScreenState extends State<UpdateScreen> {
+  double tileHeight=90;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white54,
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TopStudents(),
-          Expanded(
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            child: Text(
+              "Recent Activity",
+              style: TextStyle(
+                  letterSpacing: .8, fontSize: 16, color: Colors.grey),
+            ),
+          ),          Expanded(
             child: ListView.builder(
               itemCount: recentList.length,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                   margin: EdgeInsets.symmetric(vertical: 7, horizontal: 10),
                   width: MediaQuery.of(context).size.width,
-                  height: 90,
+                  height:tileHeight,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(3),
@@ -35,7 +44,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                         padding: EdgeInsets.all(8),
                         margin: EdgeInsets.only(left: 5),
                         width: 80,
-                        height: 80,
+                        height: tileHeight-10,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(3),
@@ -43,9 +52,9 @@ class _UpdateScreenState extends State<UpdateScreen> {
                         child: Stack(
                           children: [
                             CircleAvatar(
-                              radius: 60,
+                              radius: 34,
                               backgroundImage:
-                                  AssetImage("assets/img/logo.png"),
+                                  AssetImage(recentList[index].imgUrl),
                             ),
                             Positioned(
                               top: 40,
@@ -54,7 +63,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                                 width: 20,
                                 height: 20,
                                 decoration: BoxDecoration(
-                                    color: Colors.amberAccent,
+                                    color: recentList[index].cardColor,
                                     borderRadius: BorderRadius.circular(20)),
                               ),
                             ),
@@ -63,7 +72,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                       ),
                       Container(
                         margin: EdgeInsets.only(right: 5, left: 5),
-                        height: 80,
+                        height: tileHeight-10,
                         width: MediaQuery.of(context).size.width - 125,
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -99,7 +108,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                               height: 50,
                               width: 50,
                               child: Icon(
-                                Icons.arrow_drop_down_sharp,
+                                Icons.bookmark_border,
                                 size: 30,
                                 color: Colors.grey,
                               ),

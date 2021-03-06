@@ -11,3 +11,5 @@ export 'package:cardsys_app_ui/Screens/update_screen.dart';
 export 'package:cardsys_app_ui/Screens/submit_screen.dart';
 export 'package:cardsys_app_ui/Screens/info_screen.dart';
 export 'package:cardsys_app_ui/Screens/frame.dart';
+export 'package:cardsys_app_ui/model/topStudents.dart';
+export 'package:cardsys_app_ui/model/deptList.dart';
