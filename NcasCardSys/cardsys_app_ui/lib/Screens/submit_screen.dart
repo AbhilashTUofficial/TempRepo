@@ -1,4 +1,5 @@
 import 'package:cardsys_app_ui/export.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SubmitScreen extends StatefulWidget {
@@ -8,11 +9,6 @@ class SubmitScreen extends StatefulWidget {
 
 class _SubmitScreenState extends State<SubmitScreen> {
   String dropdownValue = deptList[0].dept;
-  bool _redIsChecked = false;
-  bool _yellowIsChecked = false;
-  bool _blueIsChecked = true;
-  bool _greenIsChecked = false;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,9 +54,31 @@ class _SubmitScreenState extends State<SubmitScreen> {
                     }).toList(),
                   )),
               Container(
-                  alignment: Alignment.center,
+                alignment: Alignment.center,
+                padding: EdgeInsets.only(left: 10),
+                margin: EdgeInsets.only(top: 20),
+                height: 40,
+                width: MediaQuery.of(context).size.width * 0.86,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(3),
+                  boxShadow: [
+                    BoxShadow(blurRadius: 5, color: Colors.grey[200])
+                  ],
+                ),
+                child: TextField(
+                  decoration: InputDecoration.collapsed(
+                      hintText: "Name or Reg number",
+                      hintStyle: TextStyle(color: Colors.black54)),
+                ),
+              ),
+              // Card select
+              CardSelector(),
+              Expanded(
+                child: Container(
+                  alignment: Alignment.topLeft,
                   padding: EdgeInsets.only(left: 10),
-                  margin: EdgeInsets.only(top: 20),
+                  margin: EdgeInsets.only(top: 20,bottom: 20),
                   height: 40,
                   width: MediaQuery.of(context).size.width * 0.86,
                   decoration: BoxDecoration(
@@ -70,46 +88,65 @@ class _SubmitScreenState extends State<SubmitScreen> {
                       BoxShadow(blurRadius: 5, color: Colors.grey[200])
                     ],
                   ),
-                  child: TextField(
-                    decoration: InputDecoration.collapsed(
-                        hintText: "Name or Reg number",
-                        hintStyle: TextStyle(color: Colors.black54)),
-                  )),
-              // Card select
-              Container(
-                margin: EdgeInsets.only(top: 20),
-                width: MediaQuery.of(context).size.width * 0.86,
-                child: Row(
-                  children: [
-                    Container(
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: Colors.blueAccent,
-                        borderRadius: BorderRadius.circular(3),
-                        boxShadow: [
-                          BoxShadow(blurRadius: 5, color: Colors.grey[200])
-                        ],
-                      ),
-                      child:Checkbox(
-                        checkColor: Colors.white,
-                        value: _greenIsChecked,
-                        onChanged: (bool value) {
-                          setState(() {
-                            _greenIsChecked = value;
-                            _redIsChecked = invert(value);
-                            _yellowIsChecked = invert(value);
-                            _blueIsChecked = invert(value);
-                          });
-                        },
-                        
-
-                      ),
+                  child: Container(
+                    margin: EdgeInsets.symmetric(vertical: 10),
+                    child: TextField(
+                      decoration: InputDecoration.collapsed(
+                          hintText: "Description:",
+                          hintStyle: TextStyle(color: Colors.black54)),
                     ),
-
-                  ],
+                  ),
                 ),
               ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        margin:
+                        EdgeInsets.only(top: 5, left: 10, right: 5, bottom: 20),
+                        child: RaisedButton(
+                          onPressed: () {},
+                          color: Colors.redAccent,
+                          textColor: Colors.white,
+                          child: Text("Cancel"),
+                          padding:
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 30),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin:
+                        EdgeInsets.only(top: 5, left: 5, right: 5, bottom: 20),
+                        child: RaisedButton(
+                          onPressed: () {},
+                          color: Colors.grey,
+                          textColor: Colors.white,
+                          child: Text("Draft"),
+                          padding:
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 30),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        margin:
+                        EdgeInsets.only(top: 5, left: 5, right: 10, bottom: 20),
+                        child: RaisedButton(
+                          onPressed: () {},
+                          color: Colors.green,
+                          textColor: Colors.white,
+                          child: Text("Submit"),
+                          padding:
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 30),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
@@ -117,12 +154,5 @@ class _SubmitScreenState extends State<SubmitScreen> {
     );
   }
 
-  bool invert(bool value) {
-    if(value){
-      return false;
-    }else if(!value){
-      return true;
-    }
-    return null;
-  }
+
 }
